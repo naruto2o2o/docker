@@ -1216,3 +1216,13 @@
 2020/01/03 11:26:48 [notice] 7#7: *55 "^/(mis)/(.*)" does not match "/index.php", client: 172.17.0.1, server: mis.dev.com, request: "GET /activity/view?id=8487 HTTP/1.1", host: "mis.dev.com", referrer: "http://mis.dev.com/activity/update?id=8487"
 2020/01/03 11:26:52 [notice] 7#7: *57 "^/(mis)/(.*)" does not match "/debug/default/toolbar", client: 172.17.0.1, server: mis.dev.com, request: "GET /debug/default/toolbar?tag=5e0eb478e26f6 HTTP/1.1", host: "mis.dev.com", referrer: "http://mis.dev.com/activity/view?id=8487"
 2020/01/03 11:26:52 [notice] 7#7: *57 "^/(mis)/(.*)" does not match "/index.php", client: 172.17.0.1, server: mis.dev.com, request: "GET /debug/default/toolbar?tag=5e0eb478e26f6 HTTP/1.1", host: "mis.dev.com", referrer: "http://mis.dev.com/activity/view?id=8487"
+2020/01/04 11:29:14 [notice] 1#1: using the "epoll" event method
+2020/01/04 11:29:14 [notice] 1#1: nginx/1.17.6
+2020/01/04 11:29:14 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2020/01/04 11:29:14 [notice] 1#1: OS: Linux 4.9.184-linuxkit
+2020/01/04 11:29:14 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2020/01/04 11:29:14 [notice] 1#1: start worker processes
+2020/01/04 11:29:14 [notice] 1#1: start worker process 7
+2020/01/04 11:29:14 [notice] 1#1: start worker process 8
+2020/01/04 11:29:14 [notice] 1#1: start worker process 9
+2020/01/04 11:29:14 [notice] 1#1: start worker process 10
