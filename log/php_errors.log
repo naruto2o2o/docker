@@ -1,0 +1,85 @@
+[12-Dec-2019 08:55:13 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'gd2' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2 (/usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2.so (/usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[12-Dec-2019 08:56:30 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'gd2' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2 (/usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2.so (/usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[12-Dec-2019 08:56:30 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'gd2' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2 (/usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2.so (/usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[12-Dec-2019 08:57:03 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'gd2' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2 (/usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2.so (/usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[12-Dec-2019 08:57:48 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'gd2' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2 (/usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2.so (/usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd2.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[19-Dec-2019 19:31:06 Asia/Shanghai] An Error occurred while handling another error:
+yii\base\ErrorException: The use statement with non-compound name 'Yii' has no effect in /work/aplum_mis/views/site/error.php:8
+Stack trace:
+#0 /work/aplum_mis/vendor/yiisoft/yii2/base/View.php(332): yii\base\ErrorHandler->handleError(2, 'The use stateme...', '/work/aplum_mis...', 8, Array)
+#1 /work/aplum_mis/vendor/yiisoft/yii2/base/View.php(332): require()
+#2 /work/aplum_mis/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/work/aplum_mis...', Array)
+#3 /work/aplum_mis/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/work/aplum_mis...', Array, Object(app\controllers\SiteController))
+#4 /work/aplum_mis/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('error', Array, Object(app\controllers\SiteController))
+#5 /work/aplum_mis/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#6 /work/aplum_mis/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#7 [internal function]: yii\web\ErrorAction->run()
+#8 /work/aplum_mis/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#9 /work/aplum_mis/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#10 /work/aplum_mis/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#11 /work/aplum_mis/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#12 /work/aplum_mis/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#13 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#14 {main}
+Previous exception:
+yii\web\NotFoundHttpException: The requested page does not exist. in /work/aplum_mis/controllers/ActivityController.php:576
+Stack trace:
+#0 /work/aplum_mis/controllers/ActivityController.php(391): app\controllers\ActivityController->findModel('5886')
+#1 [internal function]: app\controllers\ActivityController->actionAddProduct('5886', 0)
+#2 /work/aplum_mis/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /work/aplum_mis/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /work/aplum_mis/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('add-product', Array)
+#5 /work/aplum_mis/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('activity/add-pr...', Array)
+#6 /work/aplum_mis/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /work/aplum_mis/web/index.php(12): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi',
+    'HOSTNAME' => '781e99236923',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/root',
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_MD5' => '',
+    'PHP_VERSION' => '7.2.25',
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/get/php-7.2.25.tar.xz.asc/from/this/mirror',
+    'PHP_URL' => 'https://www.php.net/get/php-7.2.25.tar.xz/from/this/mirror',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/html',
+    'PHP_SHA256' => '746efeedc38e6ff7b1ec1432440f5fa801537adf6cd21e4afb3f040e5b0760a9',
+    'TZ' => 'Asia/Shanghai',
+    'USER' => 'root',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_COOKIE' => '_csrf=232b9f97b7211b16a996b3faf4e854b44494fbcb757a98e50578dd6c5c845ea0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223jicTLlGmY6M9D60dSqvPPt5uNeaA-T9%22%3B%7D; _identity=5845f8ddcd83bf6dcb9f30515a89c0c3efc74ec05117af41c30e78b9c6077e50a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A18%3A%22%5B341%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=up0gheod09j3c1nu5en744fq3u',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36',
+    'HTTP_HOST' => 'mis.dev.com',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => 'mis.dev.com',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.17.0.7',
+    'REMOTE_PORT' => '53280',
+    'REMOTE_ADDR' => '172.17.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.17.6',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/work/aplum_mis/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/activity/add-product?id=5886&TProductSearch%5Bid%5D=&TProductSearch%5Bname%5D=&TProductSearch%5Bbrand_id%5D=&TProductSearch%5Bcategory_id%5D=&TProductSearch%5Bcategory_id%5D%5B%5D=9&TProductSearch%5Bprice_from%5D=&TProductSearch%5Bprice_to%5D=&TProductSearch%5Bstatus%5D=&TProductSearch%5Bcondition_level%5D=&TProductSearch%5Bprovider%5D=&TProductSearch%5Buser_id%5D=&TProductSearch%5Bactivity_id%5D=&TProductSearch%5Bbigsale%5D=&TProductSearch%5Bdiscount_rate_from%5D=&TProductSearch%5Bdiscount_rate_to%5D=&TProductSearch%5Bno_global_discount%5D=0&TProductSearch%5Bcooperate_type%5D=seller_define_price&TProductSearch%5Bdiscount_sale_from%5D=3&TProductSearch%5Bdiscount_sale_to%5D=3&TProductSearch%5Bsale_money_from%5D=&TProductSearch%5Bsale_money_to%5D=&TProductSearch%5Bblackcard%5D=&TProductSearch%5Bdiscount_price_from%5D=98&TProductSearch%5Bdiscount_price_to%5D=&TProductSearch%5Bcustomer_type%5D=&TProductSearch%5Boriginal_size%5D=&TProductSearch%5Bonsale_time_from%5D=2019-08-21&TProductSearch%5Bonsale_time_to%5D=&TProductSearch%5BpageSize%5D=&TProductSearch%5Bis_show%5D=0',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=5886&TProductSearch%5Bid%5D=&TProductSearch%5Bname%5D=&TProductSearch%5Bbrand_id%5D=&TProductSearch%5Bcategory_id%5D=&TProductSearch%5Bcategory_id%5D%5B%5D=9&TProductSearch%5Bprice_from%5D=&TProductSearch%5Bprice_to%5D=&TProductSearch%5Bstatus%5D=&TProductSearch%5Bcondition_level%5D=&TProductSearch%5Bprovider%5D=&TProductSearch%5Buser_id%5D=&TProductSearch%5Bactivity_id%5D=&TProductSearch%5Bbigsale%5D=&TProductSearch%5Bdiscount_rate_from%5D=&TProductSearch%5Bdiscount_rate_to%5D=&TProductSearch%5Bno_global_discount%5D=0&TProductSearch%5Bcooperate_type%5D=seller_define_price&TProductSearch%5Bdiscount_sale_from%5D=3&TProductSearch%5Bdiscount_sale_to%5D=3&TProductSearch%5Bsale_money_from%5D=&TProductSearch%5Bsale_money_to%5D=&TProductSearch%5Bblackcard%5D=&TProductSearch%5Bdiscount_price_from%5D=98&TProductSearch%5Bdiscount_price_to%5D=&TProductSearch%5Bcustomer_type%5D=&TProductSearch%5Boriginal_size%5D=&TProductSearch%5Bonsale_time_from%5D=2019-08-21&TProductSearch%5Bonsale_time_to%5D=&TProductSearch%5BpageSize%5D=&TProductSearch%5Bis_show%5D=0',
+    'SCRIPT_FILENAME' => '/work/aplum_mis/web/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1576755065.918168,
+    'REQUEST_TIME' => 1576755065,
+]
