@@ -1,0 +1,11 @@
+./configure --prefix=/usr/local/php \
+--with-config-file-path=/usr/local/php \
+--enable-mbstring --with-openssl --enable-ftp \
+--enable-gd --with-jpeg=/usr  \
+--enable-mysqlnd --with-mysqli=mysqlnd \
+--with-pdo-mysql=mysqlnd --with-pear --enable-sockets \
+--with-freetype=/usr --with-zlib --with-libxml=/usr \
+--with-xmlrpc --with-zip --enable-fpm \
+--enable-xml --enable-sockets  --with-zlib \
+--with-iconv  --with-freetype=/usr/lib/ \
+--enable-soap --enable-pcntl --enable-cli --with-curl
