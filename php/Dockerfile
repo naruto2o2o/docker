@@ -1,5 +1,5 @@
 FROM php:7.2-fpm
-COPY "php/php.ini-development" "$PHP_INI_DIR/php.ini"
+COPY "php/php.ini" "$PHP_INI_DIR/php.ini"
 WORKDIR /home
 RUN apt-get update \
     && apt-get -y install bzip2 \
